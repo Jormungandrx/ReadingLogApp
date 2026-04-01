@@ -1,0 +1,17 @@
+import
+
+type Book = 
+{
+id: String;
+title: String;
+author: String;
+pages: number;
+currentPage: number;
+status: String; //do either ot to make it easier to connect to icon
+dateAdded: String; //Year-Month-day
+
+
+};
+
+
+
