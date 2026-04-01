@@ -33,6 +33,71 @@ const BooksContext = createContext<BooksContextType>
 
 
 
+{/* Make the same logs i showed in  figma */}
+const sampleBooks: Book[] = 
+[
+  {
+    id: '1',
+    title: 'A Little Life',
+    author: 'Hanya Yanigahara',
+    pages: 800,
+    currentPage: 320,
+    status: 'reading',
+    dateAdded: '2025-12-15',
+  },
+  {
+    id: '2',
+    title: 'Harry Potter',
+    author: 'J.K. Rowling',
+    pages: 233,
+    currentPage: 233,
+    status: 'finished',
+    dateAdded: '2026-03-20',
+  },
+  {
+    id: '3',
+    title: 'The Hunger Games',
+    author: 'Suzanne Collins',
+    pages: 450,
+    currentPage: 50,
+    status: 'reading',
+    dateAdded: '2026-03-25',
+  },
+  {
+    id: '4',
+    title: 'To Kill a Mockingbird',
+    author: 'Harper Lee',
+    pages: 384,
+    currentPage: 150,
+    status: 'reading',
+    dateAdded: '2025-09-10',
+  },
+  {
+    id: '5',
+    title: 'The Great Gatsby',
+    author: 'F. Scott Fitzgerald',
+    pages: 200,
+    currentPage: 40,
+    status: 'reading',
+    dateAdded: '2025-09-11',
+  },
+  {
+    id: '6',
+    title: 'The Lord of the Rings',
+    author: 'J.R.R Tolkien',
+    pages: 1000,
+    currentPage: 650,
+    status: 'reading',
+    dateAdded: '2025-09-12',
+  }
+
+];
+
+
+export function BookLogsList({})
+
+
+
 
 
 
