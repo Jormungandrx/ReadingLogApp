@@ -94,8 +94,10 @@ const sampleBooks: Book[] =
 ];
 
 
-export function BookLogsList({})
-
+export function BooksProvider({ children }: { children: React.ReactNode }) 
+{
+  const [books, setBooks] = useState<Book[]>(sampleBooks);
+}
 
 
 
