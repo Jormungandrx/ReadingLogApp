@@ -100,6 +100,26 @@ export function BooksProvider({ children }: { children: React.ReactNode })
 }
 
 
+function addBook(newBook: Book) 
+{
+    setBooks([...books, newBook]);
+}
+ 
+  return 
+  (
+    <BooksContext.Provider value={{ books, addBook }}>
+      {children}
+    </BooksContext.Provider>
+  );
+}
+ 
+
+export function useBooks() 
+{
+  return useContext(BooksContext);
+}
+
+
 
 
 
