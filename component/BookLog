@@ -1,0 +1,6 @@
+{/*colours used in figma brown, black, light brown, cream? */}
+
+const COVER_COLORS = ['8B4513', '000000', 'C19C80', 'F7F3EE'];
+
+export default function BookLog({book}) : {book: any}) 
+{
