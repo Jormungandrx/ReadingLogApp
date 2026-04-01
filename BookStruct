@@ -14,4 +14,26 @@ dateAdded: String; //Year-Month-day
 };
 
 
+type BooksContextType = 
+{
+books: Book[];
+
+addBook: (book: Book) => void;
+
+};
+
+
+const BooksContext = createContext<BooksContextType>
+(
+  {
+    books: [],
+    addBook: () => {},
+  }
+);
+
+
+
+
+
+
 
