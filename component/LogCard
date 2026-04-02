@@ -1,0 +1,17 @@
+function BookCard({ book }) {
+  const progressPercent = book.currentPage && book.pages
+    ? Math.round((book.currentPage / book.pages) * 100)
+    : 0;
+
+  return (
+    <div className="bookStruct">
+      <img src={book.cover} alt={book.title} />
+      <div className="bookInfo">
+        <h3>{book.title}</h3>
+        <p>{book.author}</p>
+        <div>{book.status === "finished" ? "✅" : "📖"}</div>
+        <p>Progress: {progressPercent}%</p>
+      </div>
+    </div>
+  );
+}
