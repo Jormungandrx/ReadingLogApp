@@ -1,5 +1,5 @@
 import { useRouter } from "expo-router";
-import { View, Text } from "react-native";
+import { Text, View } from "react-native";
 import BookCard from "./component/LogCard";
 import { useBookManager } from "./component/Middleman";
 
@@ -17,7 +17,7 @@ export default function Home() {
         book={recent}
         onPress={() =>
           router.push({
-            pathname: "/detailedlogcard",
+            pathname: "/full",
             params: { id: recent.id },
           })
         }

@@ -35,7 +35,7 @@ export default function logs() {
             book={item}
             onPress={() =>
               router.push({
-                pathname: "/detailedlogcard",
+                pathname: "/full",
                 params: { id: item.id },
               })
             }
