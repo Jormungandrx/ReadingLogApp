@@ -43,6 +43,20 @@ export default function form() {
       return;
     }
 
+    function protection(text: string) {
+      let protect = text.trim().split(" ").filter(Boolean);
+      return protect.length;
+    }
+
+    if (protection(notes) > 300) {
+      seterror("Can't exceed 300 words, sorry");
+      return;
+    }
+
+    if (protection(summary) > 300) {
+      seterror("Can't exceed 300 words, sorry");
+      return;
+    }
     try {
       middleman.add(
         title,
