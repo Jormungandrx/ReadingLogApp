@@ -4,6 +4,7 @@ import bookList from "./data.json";
 export class BookManager {
   private books: Map<string, BookLog> = new Map();
   maxid: number = 0;
+  lastadded: string = "";
 
   constructor() {
     this.loadBooks();
@@ -83,6 +84,7 @@ export class BookManager {
       Summary,
     );
     this.books.set(Book.id, Book);
+    this.lastadded = Book.id;
     this.saveBooks();
   }
 
@@ -125,6 +127,10 @@ export class BookManager {
   }
 
   public mostrecentlog(): BookLog | undefined {
-    return this.books.get(String(this.maxid));
+    if (this.lastadded == "") {
+      return this.books.get(String(this.maxid));
+    } else {
+      return this.books.get(this.lastadded);
+    }
   }
 }

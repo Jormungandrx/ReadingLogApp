@@ -1,7 +1,7 @@
 import { Tabs } from "expo-router";
 import { MiddlemanProvider } from "./component/Middleman";
 
-export default function RootLayout() {
+export default function TabLayout() {
   return (
     <MiddlemanProvider>
       <Tabs>
