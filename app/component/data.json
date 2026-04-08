@@ -7,7 +7,9 @@
     "pages":800,
     "current":320,
     "date":"2025-12-15",
-    "genre":"Melodrama"
+    "genre":"Melodrama",
+    "notes" : "Test1",
+    "summary" : "Test1"
   },
   {
     "id":"2",
@@ -16,7 +18,9 @@
     "pages":233,
     "current":233,
     "date":"2026-03-20",
-    "genre":"Fantasy"
+    "genre":"Fantasy",
+    "notes" : "Test2",
+    "summary" : "Test2"
   },
   {
     "id":"3",
@@ -25,7 +29,9 @@
     "pages":450,
     "current":50,
     "date":"2026-03-25",
-    "genre":"Science Fiction"
+    "genre":"Science Fiction",
+    "notes" : "Test3",
+    "summary" : "Test3"
   },
   {
     "id":"4",
@@ -34,7 +40,9 @@
     "pages":384,
     "current":150,
     "date":"2025-09-10",
-    "genre":"Southern Gothic"
+    "genre":"Southern Gothic",
+    "notes" : "Test4",
+    "summary" : "Test4"
   },
   {
     "id":"5",
@@ -43,7 +51,9 @@
     "pages":200,
     "current":40,
     "date":"2025-09-11",
-    "genre":"Literary Fiction"
+    "genre":"Literary Fiction",
+    "notes" : "Test5",
+    "summary" : "Test5"
   },
   {
     "id":"6",
@@ -52,7 +62,9 @@
     "pages":1000,
     "current":650,
     "date":"2025-09-12",
-    "genre":"Fantasy"
+    "genre":"Fantasy",
+    "notes" : "Test6",
+    "summary" : "Test6"
   }
 ]
 

@@ -12,6 +12,8 @@ interface Middleman {
     current: number,
     date: string,
     genre: string,
+    notes: string,
+    summary: string,
   ) => void;
   remove: (id: string) => void;
   update: (
@@ -22,6 +24,8 @@ interface Middleman {
     current: number,
     date: string,
     genre: string,
+    notes: string,
+    summary: string,
   ) => void;
   mostRecentLog: () => BookLog | undefined;
 }
@@ -53,8 +57,19 @@ export function MiddlemanProvider({ children }: { children: React.ReactNode }) {
     Current: number,
     Date: string,
     Genre: string,
+    Notes: string,
+    Summary: string,
   ) {
-    managerobject.add(Title, Author, Pages, Current, Date, Genre);
+    managerobject.add(
+      Title,
+      Author,
+      Pages,
+      Current,
+      Date,
+      Genre,
+      Notes,
+      Summary,
+    );
     refresh();
   }
 
@@ -71,8 +86,26 @@ export function MiddlemanProvider({ children }: { children: React.ReactNode }) {
     Current: number,
     Date: string,
     Genre: string,
+    Notes: string,
+    Summary: string,
   ) {
-    managerobject.update(Id, Title, Author, Pages, Current, Date, Genre);
+    if (Notes == null) {
+      Notes = "";
+    }
+    if (Summary == null) {
+      Summary = "";
+    }
+    managerobject.update(
+      Id,
+      Title,
+      Author,
+      Pages,
+      Current,
+      Date,
+      Genre,
+      Notes,
+      Summary,
+    );
     refresh();
   }
 
@@ -88,6 +121,6 @@ export function MiddlemanProvider({ children }: { children: React.ReactNode }) {
 
 export function useBookManager() {
   const context = useContext(Middleman);
-  if (!context) throw new Error("can't do this, sorry");
+  if (context == null) throw new Error("can't do this, sorry");
   return context;
 }

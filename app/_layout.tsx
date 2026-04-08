@@ -1,12 +1,15 @@
 import { Tabs } from "expo-router";
+import { MiddlemanProvider } from "./component/Middleman";
 
 export default function RootLayout() {
-   return (
-    <Tabs>
-      <Tabs.Screen name="index" options={{ title: "Home" }} />
-      <Tabs.Screen name="list" options={{ title: "My Logs" }} />
-      <Tabs.Screen name="form" options={{ title: "Add Logs" }} />
-      <Tabs.Screen name="calendar" options={{ title: "Calendar" }} />
-    </Tabs>
+  return (
+    <MiddlemanProvider>
+      <Tabs>
+        <Tabs.Screen name="home" options={{ title: "Home" }} />
+        <Tabs.Screen name="logs" options={{ title: "My Logs" }} />
+        <Tabs.Screen name="form" options={{ title: "Add Logs" }} />
+        <Tabs.Screen name="calendar" options={{ title: "Calendar" }} />
+      </Tabs>
+    </MiddlemanProvider>
   );
 }

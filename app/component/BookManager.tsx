@@ -22,6 +22,8 @@ export class BookManager {
           bookList[i].current,
           bookList[i].date,
           bookList[i].genre,
+          bookList[i].notes,
+          bookList[i].summary,
         );
         this.books.set(Book.id, Book);
         let num = parseInt(bookList[i].id);
@@ -41,6 +43,8 @@ export class BookManager {
           toParse[i].current,
           toParse[i].date,
           toParse[i].genre,
+          toParse[i].notes || "",
+          toParse[i].summary || "",
         );
         this.books.set(Book.id, Book);
         let num = parseInt(toParse[i].id);
@@ -64,6 +68,8 @@ export class BookManager {
     Current: number,
     Date: string,
     Genre: string,
+    Notes: string,
+    Summary: string,
   ) {
     const Book = new BookLog(
       String(++this.maxid),
@@ -73,6 +79,8 @@ export class BookManager {
       Current,
       Date,
       Genre,
+      Notes,
+      Summary,
     );
     this.books.set(Book.id, Book);
     this.saveBooks();
@@ -91,6 +99,8 @@ export class BookManager {
     Current: number,
     Date: string,
     Genre: string,
+    Notes: string,
+    Summary: string,
   ) {
     const search = this.books.get(Id);
     if (search != null) {
@@ -102,6 +112,8 @@ export class BookManager {
         Current,
         Date,
         Genre,
+        Notes,
+        Summary,
       );
       this.books.set(Id, newbook);
       this.saveBooks();

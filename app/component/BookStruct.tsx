@@ -31,6 +31,8 @@ export class BookLog implements Book {
     Current: number,
     Date: string,
     Genre: string,
+    Notes : string,
+    Summary : string
   ) {
     this.id = Id;
     this.title = Title;
@@ -40,6 +42,22 @@ export class BookLog implements Book {
     this.status = this.GetStatus(this.pages, this.current);
     this.date = Date;
     this.genre = Genre;
+    if(Notes == null)
+    {
+      this.notes = "";
+    }
+    else
+    {
+      this.notes = Notes;
+    }
+    if(Summary == null)
+    {
+      this.summary = "";
+    }
+    else
+    {
+      this.summary = Summary;
+    }
   }
 
   public wordCount = (text: string): number => {
