@@ -60,13 +60,13 @@ const styles = StyleSheet.create({
   loghead: {
     marginBottom: 16,
     borderBottomWidth: 1,
-    borderBottomColor: "E0D8CC",
+    borderBottomColor: "#E0D8CC",
     paddingBottom: 12,
   },
   neck: {
     marginBottom: 16,
     borderBottomWidth: 1,
-    borderBottomColor: "E0D8CC",
+    borderBottomColor: "#E0D8CC",
     paddingBottom: 12,
   },
   label: {

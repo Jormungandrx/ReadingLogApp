@@ -30,7 +30,7 @@ export default function logs() {
           fontSize: 20,
           fontWeight: "bold",
           marginBottom: 10,
-          color: "2c2c2c",
+          color: "#2c2c2c",
         }}
       >
         My Logs

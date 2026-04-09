@@ -61,8 +61,8 @@ export default function form() {
       middleman.add(
         title,
         author,
-        Number.parseInt(pages),
-        Number.parseInt(current),
+        pagesNum,
+        currentNum,
         date,
         genre,
         notes,
