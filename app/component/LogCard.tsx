@@ -18,9 +18,28 @@ export default function BookCard({ book, onPress }: BookCardProps) {
 }
 
 const styles = StyleSheet.create({
-  card: {},
+  card: {
+    backgroundColor: "#f7f3ee",
+    padding : 16,
+    marginBottom: 10,
+    borderBottomWidth : 1,
+    borderBottomColor: "#E0D8CC",
 
-  title: {},
-  author: {},
-  status: {},
+  },
+
+  title: {
+    fontSize: 18,
+    fontWeight: "bold",
+    color : "#8b4513",
+  },
+  author: {
+    fontSize: 16,
+    color: "rgb(234, 161, 134)",
+    marginTop : 2,
+  },
+  status: {
+    fontSize: 14,
+    color : "rgba(251, 29, 0, 0.33)",
+    marginTop: 4,
+  },
 });

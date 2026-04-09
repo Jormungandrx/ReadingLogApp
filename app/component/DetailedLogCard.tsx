@@ -42,14 +42,57 @@ export default function BookDetail({ book }: BookDetailProps) {
 }
 
 const styles = StyleSheet.create({
-  box: {},
-  title: {},
-  author: {},
-  loghead: {},
-  neck: {},
-  label: {},
-  value: {},
-  body: {},
-  summary: {},
-  notes: {},
+  box: {
+    flex: 1,
+    backgroundColor: "#f7f3ee",
+    padding: 20,
+  },
+  title: {
+    fontSize: 24,
+    fontWeight: "bold",
+    color: "#a6500fcf",
+  },
+  author: {
+    fontSize: 16,
+    color: "#d7a992",
+    marginTop: 4,
+  },
+  loghead: {
+    marginBottom: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: "E0D8CC",
+    paddingBottom: 12,
+  },
+  neck: {
+    marginBottom: 16,
+    borderBottomWidth: 1,
+    borderBottomColor: "E0D8CC",
+    paddingBottom: 12,
+  },
+  label: {
+    fontSize: 11,
+    color: "#0e0b0b",
+    marginTop: 10,
+    textTransform: "uppercase",
+  },
+  value: {
+    fontSize: 15,
+    color: "#0e0b0b",
+    marginTop: 2,
+  },
+  body: {
+    marginBottom: 20,
+  },
+  summary: {
+    fontSize: 16,
+    color: "#0e0b0b",
+    marginTop: 4,
+    lineHeight: 16,
+  },
+  notes: {
+    fontSize: 16,
+    color: "#0e0b0b",
+    marginTop: 4,
+    lineHeight: 16,
+  },
 });

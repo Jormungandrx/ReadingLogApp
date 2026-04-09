@@ -1,6 +1,6 @@
 import { useState } from "react";
-import { Button, ScrollView, Text, TextInput } from "react-native";
-import { useBookManager } from "./component/Middleman";
+import { Button, ScrollView, StyleSheet, Text, TextInput } from "react-native";
+import { useBookManager } from "../component/Middleman";
 
 export default function form() {
   const middleman = useBookManager();
@@ -61,8 +61,8 @@ export default function form() {
       middleman.add(
         title,
         author,
-        pagesNum,
-        currentNum,
+        Number.parseInt(pages),
+        Number.parseInt(current),
         date,
         genre,
         notes,
@@ -82,34 +82,47 @@ export default function form() {
     }
   }
 
+  let errormessage = null;
+  let successmessage = null;
+
+  if (error != "") {
+    errormessage = <Text style={{ color: "#fa1900" }}>{error}</Text>;
+  }
+
+  if (success != "") {
+    successmessage = <Text style={{ color: "#087535" }}>{success}</Text>;
+  }
+
   return (
-    <ScrollView style={{ flex: 1, padding: 20 }}>
-      <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 10 }}>
+    <ScrollView style={styles.form}>
+      <Text
+        style={{
+          fontSize: 20,
+          fontWeight: "bold",
+          marginBottom: 10,
+          color: "#2c2c2c",
+        }}
+      >
         Add a Log
       </Text>
+      {errormessage}
+      {successmessage}
 
-      {error != "" && (
-        <Text style={{ color: "red", marginBottom: 10 }}>{error}</Text>
-      )}
-      {success != "" && (
-        <Text style={{ color: "green", marginBottom: 10 }}>{success}</Text>
-      )}
-
-      <Text>Title *</Text>
+      <Text style={styles.text}>Title </Text>
       <TextInput
         value={title}
         onChangeText={settitle}
         style={{ borderBottomWidth: 1, marginBottom: 10 }}
       />
 
-      <Text>Author *</Text>
+      <Text style={styles.text}>Author</Text>
       <TextInput
         value={author}
         onChangeText={setauthor}
         style={{ borderBottomWidth: 1, marginBottom: 10 }}
       />
 
-      <Text>Pages *</Text>
+      <Text style={styles.text}>Pages</Text>
       <TextInput
         value={pages}
         onChangeText={setpages}
@@ -117,7 +130,7 @@ export default function form() {
         style={{ borderBottomWidth: 1, marginBottom: 10 }}
       />
 
-      <Text>Current Page</Text>
+      <Text style={styles.text}>Current Page</Text>
       <TextInput
         value={current}
         onChangeText={setcurr}
@@ -125,21 +138,21 @@ export default function form() {
         style={{ borderBottomWidth: 1, marginBottom: 10 }}
       />
 
-      <Text>Date in format year-month-day</Text>
+      <Text style={styles.text}>Date in format year-month-day</Text>
       <TextInput
         value={date}
         onChangeText={setdate}
         style={{ borderBottomWidth: 1, marginBottom: 10 }}
       />
 
-      <Text>Genre *</Text>
+      <Text style={styles.text}>Genre </Text>
       <TextInput
         value={genre}
         onChangeText={setgen}
         style={{ borderBottomWidth: 1, marginBottom: 10 }}
       />
 
-      <Text>Summary</Text>
+      <Text style={styles.text}>Summary</Text>
       <TextInput
         value={summary}
         onChangeText={setsum}
@@ -147,7 +160,7 @@ export default function form() {
         style={{ borderBottomWidth: 1, marginBottom: 10, height: 80 }}
       />
 
-      <Text>Notes</Text>
+      <Text style={styles.text}>Notes</Text>
       <TextInput
         value={notes}
         onChangeText={setnote}
@@ -159,3 +172,18 @@ export default function form() {
     </ScrollView>
   );
 }
+const styles = StyleSheet.create({
+  form: {
+    backgroundColor: "#f7f3ee",
+    padding: 16,
+    marginBottom: 10,
+    borderBottomWidth: 1,
+    borderBottomColor: "#E0D8CC",
+  },
+  text: {
+    color: "#2c2c2c",
+    fontSize: 13,
+    fontWeight: "bold",
+    textTransform: "uppercase",
+  },
+});

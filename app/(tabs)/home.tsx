@@ -1,7 +1,7 @@
 import { useRouter } from "expo-router";
 import { Text, View } from "react-native";
-import BookCard from "./component/LogCard";
-import { useBookManager } from "./component/Middleman";
+import BookCard from "../component/LogCard";
+import { useBookManager } from "../component/Middleman";
 
 export default function Home() {
   const { mostRecentLog, loaded } = useBookManager();
@@ -26,8 +26,15 @@ export default function Home() {
   }
 
   return (
-    <View style={{ flex: 1, padding: 20 }}>
-      <Text style={{ fontSize: 20, fontWeight: "bold", marginBottom: 10 }}>
+    <View style={{ flex: 1, padding: 20, backgroundColor: "#f7f3ee" }}>
+      <Text
+        style={{
+          fontSize: 20,
+          fontWeight: "bold",
+          marginBottom: 10,
+          color: "2c2c2c",
+        }}
+      >
         What you've just read:
       </Text>
       {message}
