@@ -32,7 +32,7 @@ export default function Home() {
           fontSize: 20,
           fontWeight: "bold",
           marginBottom: 10,
-          color: "2c2c2c",
+          color: "#2c2c2c",
         }}
       >
         What you've just read:

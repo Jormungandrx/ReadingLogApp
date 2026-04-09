@@ -168,7 +168,7 @@ export default function form() {
         style={{ borderBottomWidth: 1, marginBottom: 20, height: 80 }}
       />
 
-      <Button title="Add Log" onPress={submit} />
+      <Button title="Submit" onPress={submit} />
     </ScrollView>
   );
 }
