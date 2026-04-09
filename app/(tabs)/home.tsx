@@ -1,7 +1,7 @@
 import { useRouter } from "expo-router";
 import { Text, View } from "react-native";
-import BookCard from "../component/LogCard";
-import { useBookManager } from "../component/Middleman";
+import BookCard from "../../component/LogCard";
+import { useBookManager } from "../../component/Middleman";
 
 export default function Home() {
   const { mostRecentLog, loaded } = useBookManager();

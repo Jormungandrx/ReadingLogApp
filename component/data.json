@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1",
+    "title": "A Little Life",
+    "author": "Hanya Yanigahara",
+    "pages": 800,
+    "current": 320,
+    "date": "2025-12-15",
+    "genre": "Melodrama",
+    "notes": "This was a tough read, truthfully though the story is fictional it doesn’t undermine the factor that the actions of the priest of the church are despicable and he should be punished severely.",
+    "summary": "Jude’s backstory is being revealed and the harsh experiences that shaped who he is today are delved into. We’re experiencing a flashback to his life at church, and the abuse he received there."
+  },
+  {
+    "id": "2",
+    "title": "Harry Potter",
+    "author": "J.K. Rowling",
+    "pages": 233,
+    "current": 233,
+    "date": "2026-03-20",
+    "genre": "Fantasy",
+    "notes": "A classic from my childhood, one of those books you can never get sick of, no matter how many times you read it. ",
+    "summary": "Harry, a young orphan discovers a whole new world of wizardry, and this book follows his adventures into a new life."
+  },
+  {
+    "id": "3",
+    "title": "The Hunger Games",
+    "author": "Suzanne Collins",
+    "pages": 450,
+    "current": 50,
+    "date": "2026-03-25",
+    "genre": "Science Fiction",
+    "notes": "Must be terrifying being in her position, knowing you’re about to enter a death match, but all the people want is to know more about you before you die.",
+    "summary": "Katniss has volunteered as tribute and is preparing to enter the arena, but first they have to dress her up. It’s gone full reality tv mode and making sure the audience has a reason to love her."
+  },
+  {
+    "id": "4",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "pages": 384,
+    "current": 150,
+    "date": "2025-09-10",
+    "genre": "Southern Gothic",
+    "notes": "TesAtticus is so cool, not going to lie",
+    "summary": "We follow the point of view of Scout as the event’s of her father’s role in a controversial court case begins to arise. There’s an underlying sense of unease in the town, as more information is revealed."
+  },
+  {
+    "id": "5",
+    "title": "The Great Gatsby",
+    "author": "Scott Fitzgerald",
+    "pages": 200,
+    "current": 40,
+    "date": "2025-09-11",
+    "genre": "Literary Fiction",
+    "notes": "Every business major’s favorite movie.",
+    "summary": "Nick becomes more involved in Gatsby’s world, while Gatsby’s obsession with Daisy becomes clearer and starts driving the story towards a dangerous path. The factor of wealth stays to be a key motivation for all parties."
+  },
+  {
+    "id": "6",
+    "title": "The Lord of the Rings",
+    "author": "J.R.R Tolkien",
+    "pages": 1000,
+    "current": 650,
+    "date": "2025-09-12",
+    "genre": "Fantasy",
+    "notes": "Even after knowing the events of the future, I still despise Boromir in this movie so much.",
+    "summary": "Sauron is once again a force that threatens Middle-Earth, a coalition between different races has to be created in order to destroy the ring. Tensions are high as the power of the ring tempts to corrupt our party during their voyage."
+  }
+]

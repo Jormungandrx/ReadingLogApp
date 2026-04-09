@@ -1,5 +1,5 @@
 import { StyleSheet, Text, View } from "react-native";
-import { useBookManager } from "../component/Middleman";
+import { useBookManager } from "../../component/Middleman";
 
 export default function Achievements() {
   const mid = useBookManager();
@@ -43,7 +43,7 @@ export default function Achievements() {
 
 const styles = StyleSheet.create({
   header: {
-    fontSize: 20,
+    fontSize: 24,
     fontWeight: "bold",
     color: "#020101",
     marginBottom: 20,
@@ -56,14 +56,13 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 16,
     color: "#020101",
-    textTransform: "uppercase",
-    marginTop: 20,
+    marginTop: 18,
   },
 
   number: {
     fontSize: 24,
     fontWeight: "bold",
-    color: "#f40000",
+    color: "#070202",
     marginTop: 4,
   },
 });

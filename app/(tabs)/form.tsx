@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Button, ScrollView, StyleSheet, Text, TextInput } from "react-native";
-import { useBookManager } from "../component/Middleman";
+import { useBookManager } from "../../component/Middleman";
 
 export default function form() {
   const middleman = useBookManager();
@@ -184,6 +184,12 @@ const styles = StyleSheet.create({
     color: "#2c2c2c",
     fontSize: 13,
     fontWeight: "bold",
-    textTransform: "uppercase",
+    marginTop: 8,
+    marginBottom: 8,
+  },
+  button: {
+    color: "#2c2c2c",
+    fontWeight: "bold",
+    fontSize: 16,
   },
 });

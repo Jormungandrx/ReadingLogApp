@@ -1,5 +1,5 @@
 import { Stack } from "expo-router";
-import { MiddlemanProvider } from "./component/Middleman";
+import { MiddlemanProvider } from "../component/Middleman";
 
 export default function RootLayout() {
   return (

@@ -1,7 +1,7 @@
 import { useLocalSearchParams } from "expo-router";
 import { Text, View } from "react-native";
-import BookDetail from "./component/DetailedLogCard";
-import { useBookManager } from "./component/Middleman";
+import BookDetail from "../component/DetailedLogCard";
+import { useBookManager } from "../component/Middleman";
 
 export default function full() {
   const param = useLocalSearchParams();
