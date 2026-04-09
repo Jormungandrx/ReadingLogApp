@@ -187,9 +187,4 @@ const styles = StyleSheet.create({
     marginTop: 8,
     marginBottom: 8,
   },
-  button: {
-    color: "#2c2c2c",
-    fontWeight: "bold",
-    fontSize: 16,
-  },
 });
